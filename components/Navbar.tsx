@@ -1,0 +1,104 @@
+"use client";
+
+import Link from "next/link";
+import Image from "next/image";
+import { useState } from "react";
+
+export default function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+  
+  return (
+    <nav className="sticky top-0 z-50 bg-[#0D1117]/90 backdrop-blur border-b border-cyan-500/20">
+      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+       <Link
+  href="/"
+  className="flex items-center gap-3 max-w-[75%]"
+>
+  <Image
+    src="/images/Logo.png"
+    alt="Jaco 3D Printing"
+    width={50}
+    height={50}
+    className="h-12 w-auto"
+  />
+
+  <span className="font-bold text-xl">
+    Jaco <span className="text-orange-400">3D Printing</span>
+  </span>
+</Link>
+
+        {/* Desktop Menu */}
+<div className="hidden md:flex gap-6">
+          <Link href="/" className="hover:text-cyan-400">
+    Home
+  </Link>
+
+          <Link href="/about" className="hover:text-cyan-400">
+    About
+  </Link>
+
+           <Link href="/gallery" className="hover:text-cyan-400">
+    Gallery
+  </Link>
+
+          <Link href="/contact" className="hover:text-cyan-400">
+    Contact
+  </Link>
+
+        </div>
+
+{/* Mobile Hamburger */}
+<button
+  className="md:hidden text-3xl"
+  onClick={() => setMenuOpen(!menuOpen)}
+>
+  {menuOpen ? "✕" : "☰"}
+</button>
+
+      </div>
+
+{menuOpen && (
+  <div className="md:hidden border-t border-cyan-500/20">
+
+    <div className="flex flex-col p-4 gap-4">
+
+      <Link
+        href="/"
+        onClick={() => setMenuOpen(false)}
+        className="hover:text-cyan-400"
+      >
+        Home
+      </Link>
+
+      <Link
+        href="/about"
+        onClick={() => setMenuOpen(false)}
+        className="hover:text-cyan-400"
+      >
+        About
+      </Link>
+
+      <Link
+        href="/gallery"
+        onClick={() => setMenuOpen(false)}
+        className="hover:text-cyan-400"
+      >
+        Gallery
+      </Link>
+
+      <Link
+        href="/contact"
+        onClick={() => setMenuOpen(false)}
+        className="hover:text-cyan-400"
+      >
+        Contact
+      </Link>
+
+    </div>
+
+  </div>
+)}
+    </nav>
+  );
+}
