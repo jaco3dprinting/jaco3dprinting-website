@@ -35,7 +35,7 @@ export default function Gallery() {
   };
 }, [selectedImage]);
 
-  const images = Array.from({ length: 20 }, (_, i) => i + 1);
+  const images = Array.from({ length: 22 }, (_, i) => i + 1);
 
   return (
     <main className="min-h-screen bg-[#0D1117] text-white">
