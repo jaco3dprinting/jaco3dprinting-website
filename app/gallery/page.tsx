@@ -53,7 +53,7 @@ export default function Gallery() {
         </p>
 
 <p className="text-xl text-gray-300 mb-12">
-          Please visit my Facebook or Instagram for more content and updates. Links can be found in at the bottom of the page. 
+          Please visit my Facebook or Instagram for more content and updates. Links can be found at the bottom of the page. 
         </p>
         
 
