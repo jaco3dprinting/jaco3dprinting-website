@@ -9,13 +9,13 @@ export default function Home() {
         <div className="grid md:grid-cols-2 gap-10 items-center">
 
           <div className="flex justify-center">
-            <Image
-  src="/images/Logo.png"
-  alt="Jaco 3D Printing"
-  width={500}
-  height={500}
-  className="drop-shadow-[0_0_30px_rgba(34,211,238,0.3)]"
-/>
+           <Image
+            src="/images/Logo.png"
+            alt="Jaco 3D Printing"
+            width={500}
+            height={500}
+            className="w-auto h-auto drop-shadow-[0_0_30px_rgba(34,211,238,0.3)]"
+           />
           </div>
 
           <div>
@@ -165,11 +165,11 @@ export default function Home() {
           </h3>
 
           <p className="text-gray-400">
-            Reverse-engineered and redesigned component created through CAD modelling.
+            Reverse-engineered and redesigned component created through CAD modeling.
           </p>
         </div>
       </div>
-
+ 
     </div>
 
   </div>

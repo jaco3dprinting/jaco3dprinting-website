@@ -3,6 +3,9 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 
+//Image Part - Change lenght to add more photo's to Gallery
+// Create once when the module loads
+const images = Array.from({ length: 27 }, (_, i) => i + 1);
 
 export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
@@ -35,7 +38,7 @@ export default function Gallery() {
   };
 }, [selectedImage]);
 
-  const images = Array.from({ length: 22 }, (_, i) => i + 1);
+  
 
   return (
     <main className="min-h-screen bg-[#0D1117] text-white">
@@ -65,10 +68,13 @@ export default function Gallery() {
               <div className="relative h-72">
 
                 <Image
-                  src={`/images/gallery/print${num}.jpg`}
-                  alt={`Project ${num}`}
-                  fill
-                  className="object-contain"
+                 src={`/images/gallery/print${num}.jpg`}
+                 alt={`Project ${num}`}
+                 fill
+                 sizes="(max-width: 768px) 100vw,
+                 (max-width: 1024px) 50vw,
+                 33vw"
+                 className="object-contain"
                 />
 
               </div>
@@ -90,10 +96,11 @@ export default function Gallery() {
       onClick={(e) => e.stopPropagation()}
     >
       <Image
-        src={`/images/gallery/print${selectedImage}.jpg`}
-        alt={`Project ${selectedImage}`}
-        fill
-        className="object-contain"
+       src={`/images/gallery/print${selectedImage}.jpg`}
+       alt={`Project ${selectedImage}`}
+       fill
+       sizes="100vw"
+       className="object-contain"
       />
 
 <button

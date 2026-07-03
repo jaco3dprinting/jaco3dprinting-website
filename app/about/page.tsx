@@ -9,7 +9,7 @@ export default function About() {
 
         <p className="text-xl text-gray-300 mb-10">
           Based in White River, Mpumalanga, Jaco 3D Printing provides
-          professional 3D printing, CAD design and printer repair services
+          3D printing, CAD design and printer repair services
           for hobbyists, businesses and makers.
         </p>
 
