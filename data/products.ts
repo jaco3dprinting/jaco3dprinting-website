@@ -272,9 +272,9 @@ const products: Product[] = [
     "Need something different? Let me design something for you.",
   fullDescription:
     "If you need a Custom designed product, speak to me and let us bring your idee to live one layer at a time. You can have a look at my Gallery / Instagram or Facebook for some of my custome work already done for other customers.",
-  imageCount: 1,
+  imageCount: 8,
   price: 50,
-  badges: [ "Simple Designs - From R50" , "Standard Designs - From R100", "Complex Designs - From R250+"],
+  badges: [ "Simple Designs - Less than 30 min Free" , "Standard Designs - From R100", "Complex Designs - From R250+"],
   status: "Custom Order",
   whatsappMessage:
     "Hi Jaco, I am looking for a Custom designed product.",
@@ -298,6 +298,19 @@ const products: Product[] = [
     "Hi Jaco, My 3D Priner is giving me some issues, it is a (What printer Make and Model) and i am having issues with (what is wrong? does it not switch on, feed Filament, give out an error, prints not sticking to the bed? please discribe the issues here).",
 
   },
+
+  {
+  id: "cargo",
+  category: "automotive",
+  title: "Cargo Seatblet Clip",
+  description:
+    "Cargo Seatbeld Clip to be used only for Cargo",
+  fullDescription:
+    "This device is to be only used for Cargo, Not to be used to bypass safety alarm for your Car/Bakkie",
+  imageCount: 1,
+  price: 8,
+  
+  }
 
 ];
 
