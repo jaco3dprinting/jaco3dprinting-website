@@ -63,7 +63,7 @@ const products: Product[] = [
     "2 Removable toothbrush Holder printed in PLA.",
   fullDescription:
     "Keep your bathroom neat while adding a touch of coastal charm with our 3D Printed Double Toothbrush Holder. Designed with a stylish vertical ribbed finish and finished with elegant white anchor emblems, this holder is both practical and decorative. You can replace the white anchors to suite your style. The dual-compartment design comfortably holds multiple toothbrushes, toothpaste, or other bathroom essentials while the integrated base keeps everything stable and organized on your bathroom counter. Each holder is precision 3D printed using high-quality PLA filament, ensuring a durable, lightweight, and beautifully finished product. Available in a variety of colors to match your bathroom décor.",
-  imageCount: 2,
+  imageCount: 3,
   price: 110,
   material: "PLA",
   multiColour: true,
@@ -95,10 +95,27 @@ const products: Product[] = [
   fullDescription:
     "Upgrade your Ford Ranger's interior with this custom 3D-printed accessory switch panel, designed specifically for 2015–2019 Ford Ranger models. This panel is made to accommodate four standard Toyota-style 20x20mm switches, providing a clean, factory-style solution for controlling accessories such as spotlights, light bars, air compressors, or other aftermarket equipment. Designed for a precise fit, this durable panel installs neatly into the factory location, giving your vehicle a professional OEM-inspired appearance while eliminating the need for untidy switch installations. ",
   imageCount: 3,
-  price: 350,
+  price: 400,
   material: "PETG",
   multiColour: true,
 
+},
+
+
+ {
+  id: "ford-intercooler",
+  category: "automotive",
+  title: "2022 - 2026 Ford Ranger Intercooler Grill",
+  description:
+    "Intercooler Grill for the Next Gen Ford Rangers printed in PETG.",
+  fullDescription:
+    "Cover the big opening that the New Rangers have in front of the Intercooler with this Grill Printed in PETG, it does not just look good but it also help protect the Intercooler from unwanted damage. It simply just clips into place with 8 clips that will hold it securely.",
+  imageCount: 3,
+  price: 650,
+  pricePrefix: "Coming Soon",
+  material: "PETG",
+  multiColour: true,
+  status: "Coming Soon"
 },
 
  {
@@ -309,6 +326,8 @@ const products: Product[] = [
     "This device is to be only used for Cargo, Not to be used to bypass safety alarm for your Car/Bakkie",
   imageCount: 1,
   price: 8,
+  material: "PETG",
+  multiColour: true,
   
   }
 

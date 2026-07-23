@@ -41,9 +41,15 @@ export default function Home() {
   className="bg-orange-500 hover:bg-orange-600 px-6 py-3 rounded-lg font-semibold text-center"
 >
   Request a Quote
-</a>
-
+</a>     
               <Link
+  href="/products"
+  className="border border-cyan-500 hover:bg-cyan-500/10 px-6 py-3 rounded-lg font-semibold text-center"
+>
+  View Products
+</Link>
+
+             <Link
   href="/gallery"
   className="border border-cyan-500 hover:bg-cyan-500/10 px-6 py-3 rounded-lg font-semibold text-center"
 >
@@ -120,7 +126,7 @@ export default function Home() {
     </h2>
 
     <p className="text-center text-gray-400 mb-12">
-      Examples of recent work from Jaco 3D Printing.
+      Examples of work from Jaco 3D Printing. For more please have a look at the Gallery or Facebook and Instagram.
     </p>
 
     <div className="grid md:grid-cols-2 gap-8">
@@ -242,6 +248,8 @@ export default function Home() {
       Based in White River, Jaco 3D Printing proudly serves customers
       throughout White River, Nelspruit and surrounding areas with
       professional 3D printing, CAD design and printer repair services.
+
+      We do offer corrier through Pudo for any work outside White River and Nelspruit area if you are looking for something.
     </p>
 
   </div>
