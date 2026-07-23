@@ -13,6 +13,17 @@ export default function About() {
           for hobbyists, businesses and makers.
         </p>
 
+        <p className="text-xl text-gray-300 mb-10">
+          Jaco 3D Printing is a Small Startup that is run from home and 
+          trying to building to a bigger more capable manufacturing business  
+          with the support of you. My Goals are to supply my Customers with 
+          High quality 3D Printed parts for a more reasonable price that 
+          is affordable. Thank you to everyone that has supported my small
+          business to grow to what it is now and I hope to grow the amount
+          of customers as this 3D Printing company grows with you to be able
+          to bring you more Filament options to print from.
+        </p>
+
         <div className="grid md:grid-cols-2 gap-10">
 
           <div>

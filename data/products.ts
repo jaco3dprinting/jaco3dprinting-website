@@ -111,7 +111,7 @@ const products: Product[] = [
   fullDescription:
     "Cover the big opening that the New Rangers have in front of the Intercooler with this Grill Printed in PETG, it does not just look good but it also help protect the Intercooler from unwanted damage. It simply just clips into place with 8 clips that will hold it securely.",
   imageCount: 3,
-  price: 650,
+  price: 750,
   pricePrefix: "Coming Soon",
   material: "PETG",
   multiColour: true,
