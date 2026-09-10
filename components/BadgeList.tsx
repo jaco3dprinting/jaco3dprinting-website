@@ -14,12 +14,12 @@ type Props = {
 export default function BadgeList({ product }: Props) {
   const badges = [];
 
-  if (product.material) {
-    badges.push({
-      label: product.material,
-      icon: <Layers3 size={14} />,
-    });
-  }
+  product.materials?.forEach((material) =>
+  badges.push({
+    label: material,
+    icon: <Layers3 size={14} />,
+  })
+);
 
   if (product.multiColour) {
     badges.push({
